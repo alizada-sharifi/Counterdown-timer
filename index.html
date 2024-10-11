@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Countdown Timer</title>
+    <link rel="stylesheet" href="output.css" />
+    <link rel="stylesheet" href="asset/style.css" />
+  </head>
+  <body
+    class="flex justify-center items-center h-[100vh] font-orbid gap-md w-full"
+  >
+    <div
+      class="bg-yellow py-10 px-5 rounded-md text-center w-full max-w-[600px] flex flex-col gap-y-sm mx-3"
+    >
+      <input
+        type="number"
+        name="timerInput"
+        id="number"
+        class="border-0 py-lg px-xsm rounded-md text-md font-orbid w-4xl font-bold outline-none m-auto block"
+        placeholder="Enter seconds"
+      />
+      <div class="time-display text-lg md:text-xl">
+        <span class="hour">00 <sub class="text-md text-red">hr</sub></span> :
+        <span class="minute">00 <sub class="text-md text-red">min</sub></span> :
+        <span class="second">00 <sub class="text-md text-red">sec</sub></span>
+      </div>
+
+      <div class="btn flex justify-center items-center gap-md flex-wrap">
+        <button
+          id="start"
+          class="text-lg bg-silk rounded-md py-xsm px-md capitalize hover:bg-red"
+          aria-label="Start the timer"
+        >
+          Start
+        </button>
+
+        <button
+          id="stop"
+          class="text-lg bg-silk rounded-md py-xsm px-lg capitalize hover:bg-red"
+          aria-label="Stop the timer"
+        >
+          Stop
+        </button>
+
+        <button
+          id="reset"
+          class="text-lg bg-silk rounded-md py-xsm px-md capitalize hover:bg-red"
+          aria-label="Reset the timer"
+        >
+          Reset
+        </button>
+      </div>
+    </div>
+
+    <!-- ============ js section ================== -->
+    <script src="asset/script.js"></script>
+  </body>
+</html>

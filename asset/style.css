@@ -1,0 +1,30 @@
+@font-face {
+  font-family: orbid;
+  src: url(fonts/Orbitron-Regular.ttf);
+}
+body {
+  background: url("image/bg.avif") no-repeat center / cover;
+}
+#number {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+button {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  transition: all 0.5s;
+}
+/* =============  */
+
+.blink {
+  animation: blink 1s infinite;
+}
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
